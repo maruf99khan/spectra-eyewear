@@ -51,3 +51,4 @@ skills-manifest.json
 opencode.json
 test-results/
 mcp-test-*.txt
+.playwright-mcp/

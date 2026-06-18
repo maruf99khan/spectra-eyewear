@@ -1,17 +1,7 @@
-"use client"
-
-import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 
 export function Hero() {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    const timer = setTimeout(() => setMounted(true), 50)
-    return () => clearTimeout(timer)
-  }, [])
-
   return (
     <section className="relative min-h-[90vh] flex items-center hero-gradient overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(0,0,0,0.02)_0%,transparent_60%)]" />
@@ -21,7 +11,7 @@ export function Hero() {
 
       <div className="container-main w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[80vh]">
-          <div className={`py-20 lg:py-0 transition-all duration-700 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="py-20 lg:py-0 animate-fadeInUp">
             <p className="section-label mb-6">
               Summer Collection 2026
             </p>
@@ -67,7 +57,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className={`relative aspect-[4/5] w-full max-w-lg mx-auto lg:max-w-none transition-all duration-700 delay-200 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="relative aspect-[4/5] w-full max-w-lg mx-auto lg:max-w-none animate-fadeInUp">
             <div className="relative w-full h-full min-h-[400px] lg:min-h-[600px]">
               <div className="absolute -inset-4 bg-gradient-to-br from-black/[0.02] to-transparent rounded-lg" />
               <div className="relative w-full h-full overflow-hidden">
@@ -76,7 +66,8 @@ export function Hero() {
                   alt="Spectra eyewear"
                   fill
                   className="object-cover transition-transform duration-[800ms] hover:scale-[1.02]"
-                  priority
+                  preload
+                  fetchPriority="high"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>

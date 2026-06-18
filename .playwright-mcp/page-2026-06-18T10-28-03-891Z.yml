@@ -1,0 +1,131 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 300,000+ WEAR SPECTRA
+      - generic [ref=e6]: BUY 2, GET 1 FREE
+      - generic [ref=e7]: FREE SHIPPING ON ORDERS $50+
+    - button "Dismiss announcement" [ref=e8]:
+      - img [ref=e9]
+  - banner [ref=e12]:
+    - navigation [ref=e13]:
+      - link "SPECTRA" [ref=e14] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e15]:
+        - link "Sunglasses" [ref=e17] [cursor=pointer]:
+          - /url: /collections/sunglasses
+          - text: Sunglasses
+          - img [ref=e18]
+        - link "Eyeglasses" [ref=e21] [cursor=pointer]:
+          - /url: /collections/eyeglasses
+          - text: Eyeglasses
+          - img [ref=e22]
+        - link "Collections" [ref=e25] [cursor=pointer]:
+          - /url: /collections/all
+          - text: Collections
+          - img [ref=e26]
+        - link "About" [ref=e29] [cursor=pointer]:
+          - /url: /about
+        - link "Stores" [ref=e31] [cursor=pointer]:
+          - /url: /stores
+      - generic [ref=e32]:
+        - button "Open search" [ref=e33]:
+          - img [ref=e34]
+        - link "Sign in" [ref=e37] [cursor=pointer]:
+          - /url: /auth/login
+          - img [ref=e38]
+        - link "Wishlist" [ref=e41] [cursor=pointer]:
+          - /url: /wishlist
+          - img [ref=e42]
+        - link "Shopping cart" [ref=e44] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=e45]
+  - main [ref=e48]:
+    - generic [ref=e50]:
+      - generic [ref=e53]: "404"
+      - heading "Lost Your Way?" [level=1] [ref=e54]
+      - paragraph [ref=e55]: The page you're looking for doesn't exist or has been moved. Even the best frames occasionally misplace things.
+      - link "Back to Home" [ref=e56] [cursor=pointer]:
+        - /url: /
+        - button "Back to Home" [ref=e57]:
+          - img [ref=e58]
+          - text: Back to Home
+  - contentinfo [ref=e60]:
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - link "SPECTRA" [ref=e64] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e65]: Redefining vision through precision craftsmanship and timeless design. Every frame tells a story.
+        - generic [ref=e66]:
+          - link [ref=e67] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e68]
+          - link [ref=e71] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e72]
+          - link [ref=e75] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e76]
+      - generic [ref=e79]:
+        - heading "Shop" [level=4] [ref=e80]
+        - list [ref=e81]:
+          - listitem [ref=e82]:
+            - link "Sunglasses" [ref=e83] [cursor=pointer]:
+              - /url: /collections/sunglasses
+          - listitem [ref=e84]:
+            - link "Eyeglasses" [ref=e85] [cursor=pointer]:
+              - /url: /collections/eyeglasses
+          - listitem [ref=e86]:
+            - link "New Arrivals" [ref=e87] [cursor=pointer]:
+              - /url: /collections/new-arrivals
+          - listitem [ref=e88]:
+            - link "Bestsellers" [ref=e89] [cursor=pointer]:
+              - /url: /collections/bestsellers
+          - listitem [ref=e90]:
+            - link "Limited Edition" [ref=e91] [cursor=pointer]:
+              - /url: /collections/limited-edition
+      - generic [ref=e92]:
+        - heading "Support" [level=4] [ref=e93]
+        - list [ref=e94]:
+          - listitem [ref=e95]:
+            - link "Size Guide" [ref=e96] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e97]:
+            - link "Shipping & Returns" [ref=e98] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e99]:
+            - link "Warranty" [ref=e100] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e101]:
+            - link "FAQ" [ref=e102] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e103]:
+            - link "Contact Us" [ref=e104] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e105]:
+        - heading "Company" [level=4] [ref=e106]
+        - list [ref=e107]:
+          - listitem [ref=e108]:
+            - link "About Us" [ref=e109] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e110]:
+            - link "Stores" [ref=e111] [cursor=pointer]:
+              - /url: /stores
+          - listitem [ref=e112]:
+            - link "Sustainability" [ref=e113] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e114]:
+            - link "Careers" [ref=e115] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e116]:
+            - link "Press" [ref=e117] [cursor=pointer]:
+              - /url: "#"
+    - generic [ref=e119]:
+      - paragraph [ref=e120]: © 2026 Spectra Eyewear. All rights reserved.
+      - generic [ref=e121]:
+        - link "Privacy Policy" [ref=e122] [cursor=pointer]:
+          - /url: "#"
+        - link "Terms of Service" [ref=e123] [cursor=pointer]:
+          - /url: "#"
+        - link "Cookies" [ref=e124] [cursor=pointer]:
+          - /url: "#"
+  - alert [ref=e125]

@@ -1,0 +1,320 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 300,000+ WEAR SPECTRA
+      - generic [ref=e6]: BUY 2, GET 1 FREE
+      - generic [ref=e7]: FREE SHIPPING ON ORDERS $50+
+    - button "Dismiss announcement" [ref=e8]:
+      - img [ref=e9]
+  - banner [ref=e12]:
+    - navigation [ref=e13]:
+      - link "SPECTRA" [ref=e14] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e15]:
+        - link "Sunglasses" [ref=e17] [cursor=pointer]:
+          - /url: /collections/sunglasses
+          - text: Sunglasses
+          - img [ref=e18]
+        - link "Eyeglasses" [ref=e21] [cursor=pointer]:
+          - /url: /collections/eyeglasses
+          - text: Eyeglasses
+          - img [ref=e22]
+        - link "Collections" [ref=e25] [cursor=pointer]:
+          - /url: /collections/all
+          - text: Collections
+          - img [ref=e26]
+        - link "About" [ref=e29] [cursor=pointer]:
+          - /url: /about
+        - link "Stores" [ref=e31] [cursor=pointer]:
+          - /url: /stores
+      - generic [ref=e32]:
+        - button "Open search" [ref=e33]:
+          - img [ref=e34]
+        - img [ref=e38]
+        - link "Wishlist" [ref=e41] [cursor=pointer]:
+          - /url: /wishlist
+          - img [ref=e42]
+        - link "Shopping cart" [ref=e44] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=e45]
+  - main [ref=e48]:
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - paragraph [ref=e53]: Summer Collection 2026
+        - heading "See the World Through New Eyes" [level=1] [ref=e54]:
+          - text: See the World
+          - text: Through New Eyes
+        - paragraph [ref=e55]: Precision-crafted eyewear for the discerning. Each frame engineered for clarity, designed for impact.
+        - generic [ref=e56]:
+          - link "Shop the Collection" [ref=e57] [cursor=pointer]:
+            - /url: /collections/all
+          - link "View Sunglasses" [ref=e58] [cursor=pointer]:
+            - /url: /collections/sunglasses
+      - img "Spectra eyewear" [ref=e61]
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - paragraph [ref=e66]: Curated
+          - heading "Featured Collections" [level=2] [ref=e67]
+        - link "View All" [ref=e68] [cursor=pointer]:
+          - /url: /collections/all
+          - text: View All
+          - img [ref=e69]
+      - generic [ref=e71]:
+        - link "Signature 4 styles Shop Now" [ref=e73] [cursor=pointer]:
+          - /url: /collections/signature
+          - generic [ref=e74]:
+            - img [ref=e76]
+            - generic [ref=e83]:
+              - heading "Signature" [level=3] [ref=e84]
+              - paragraph [ref=e85]: 4 styles
+              - generic [ref=e86]: Shop Now
+        - link "New Arrivals 2 styles Shop Now" [ref=e88] [cursor=pointer]:
+          - /url: /collections/new-arrivals
+          - generic [ref=e89]:
+            - img [ref=e91]
+            - generic [ref=e98]:
+              - heading "New Arrivals" [level=3] [ref=e99]
+              - paragraph [ref=e100]: 2 styles
+              - generic [ref=e101]: Shop Now
+        - link "Bestsellers 1 styles Shop Now" [ref=e103] [cursor=pointer]:
+          - /url: /collections/bestsellers
+          - generic [ref=e104]:
+            - img [ref=e106]
+            - generic [ref=e113]:
+              - heading "Bestsellers" [level=3] [ref=e114]
+              - paragraph [ref=e115]: 1 styles
+              - generic [ref=e116]: Shop Now
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: Most Loved
+        - heading "Bestsellers" [level=2] [ref=e121]
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - link "New Sale Spectra Aviator Gold Quick Add" [ref=e124] [cursor=pointer]:
+            - /url: /products/spectra-aviator-gold
+            - generic [ref=e125]:
+              - generic [ref=e126]: New
+              - generic [ref=e127]: Sale
+              - generic [ref=e129]:
+                - img [ref=e131]
+                - generic [ref=e137]: Spectra Aviator Gold
+              - button "Quick Add" [ref=e139]
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - link "Spectra Aviator Gold" [ref=e146] [cursor=pointer]:
+                - /url: /products/spectra-aviator-gold
+              - button [ref=e147]:
+                - img [ref=e148]
+            - generic [ref=e150]:
+              - generic [ref=e151]: $349.00
+              - generic [ref=e152]: $429.00
+        - generic [ref=e153]:
+          - link "Spectra Wayfarer Classic Quick Add" [ref=e154] [cursor=pointer]:
+            - /url: /products/spectra-wayfarer-classic
+            - generic [ref=e155]:
+              - generic [ref=e157]:
+                - img [ref=e159]
+                - generic [ref=e165]: Spectra Wayfarer Classic
+              - button "Quick Add" [ref=e167]
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - link "Spectra Wayfarer Classic" [ref=e174] [cursor=pointer]:
+                - /url: /products/spectra-wayfarer-classic
+              - button [ref=e175]:
+                - img [ref=e176]
+            - generic [ref=e179]: $289.00
+        - generic [ref=e180]:
+          - link "Spectra Square Luxe Quick Add" [ref=e181] [cursor=pointer]:
+            - /url: /products/spectra-square-luxe
+            - generic [ref=e182]:
+              - generic [ref=e184]:
+                - img [ref=e186]
+                - generic [ref=e192]: Spectra Square Luxe
+              - button "Quick Add" [ref=e194]
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - link "Spectra Square Luxe" [ref=e201] [cursor=pointer]:
+                - /url: /products/spectra-square-luxe
+              - button [ref=e202]:
+                - img [ref=e203]
+            - generic [ref=e206]: $449.00
+        - generic [ref=e207]:
+          - link "Spectra Aviator Gradient Quick Add" [ref=e208] [cursor=pointer]:
+            - /url: /products/spectra-aviator-gradient
+            - generic [ref=e209]:
+              - generic [ref=e211]:
+                - img [ref=e213]
+                - generic [ref=e219]: Spectra Aviator Gradient
+              - button "Quick Add" [ref=e221]
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - link "Spectra Aviator Gradient" [ref=e227] [cursor=pointer]:
+                - /url: /products/spectra-aviator-gradient
+              - button [ref=e228]:
+                - img [ref=e229]
+            - generic [ref=e232]: $399.00
+    - generic [ref=e235]:
+      - generic [ref=e236]:
+        - paragraph [ref=e237]: Our Story
+        - heading "Crafted for Clarity. Designed for Life." [level=2] [ref=e238]:
+          - text: Crafted for Clarity.
+          - text: Designed for Life.
+        - generic [ref=e239]:
+          - paragraph [ref=e240]: Born from a belief that eyewear should be as functional as it is beautiful, Spectra brings together master artisans and modern visionaries.
+          - paragraph [ref=e241]: Every frame begins as a sketch, evolves through 3D modeling, and is meticulously hand-finished by craftspeople with decades of experience. The result is eyewear that feels as good as it looks — featherlight, durable, and unmistakably refined.
+          - paragraph [ref=e242]: We source the finest Japanese acetate, beta titanium, and sustainably harvested woods. Each material chosen not just for beauty, but for longevity. Because the best frame is the one you never want to take off.
+      - generic [ref=e243]:
+        - generic [ref=e245]:
+          - img [ref=e247]
+          - blockquote [ref=e251]: “We don't just make glasses. We craft instruments of vision.”
+        - generic [ref=e253]:
+          - generic [ref=e254]:
+            - paragraph [ref=e255]: 25+
+            - paragraph [ref=e256]: Years Crafting
+          - generic [ref=e257]:
+            - paragraph [ref=e258]: 10K+
+            - paragraph [ref=e259]: Frames Designed
+          - generic [ref=e260]:
+            - paragraph [ref=e261]: 50K+
+            - paragraph [ref=e262]: Happy Customers
+          - generic [ref=e263]:
+            - paragraph [ref=e264]: 30+
+            - paragraph [ref=e265]: Countries
+    - generic [ref=e267]:
+      - generic [ref=e268]:
+        - paragraph [ref=e269]: Testimonials
+        - heading "Loved by Thousands" [level=2] [ref=e270]
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - img [ref=e274]
+            - img [ref=e276]
+            - img [ref=e278]
+            - img [ref=e280]
+            - img [ref=e282]
+          - paragraph [ref=e284]: “The most comfortable frames I've ever worn. I forget I'm wearing them — but everyone reminds me how great they look.”
+          - generic [ref=e285]:
+            - paragraph [ref=e286]: Alex M.
+            - paragraph [ref=e287]: Verified Buyer
+        - generic [ref=e288]:
+          - generic [ref=e289]:
+            - img [ref=e290]
+            - img [ref=e292]
+            - img [ref=e294]
+            - img [ref=e296]
+            - img [ref=e298]
+          - paragraph [ref=e300]: “The 3D viewer on the site let me see every angle before buying. It felt like trying them on in person.”
+          - generic [ref=e301]:
+            - paragraph [ref=e302]: Sarah K.
+            - paragraph [ref=e303]: Designer, NYC
+        - generic [ref=e304]:
+          - generic [ref=e305]:
+            - img [ref=e306]
+            - img [ref=e308]
+            - img [ref=e310]
+            - img [ref=e312]
+            - img [ref=e314]
+          - paragraph [ref=e316]: “I've been through a dozen eyewear brands. Spectra is the first one I've reordered from. The quality is unmatched.”
+          - generic [ref=e317]:
+            - paragraph [ref=e318]: James R.
+            - paragraph [ref=e319]: Architect, London
+        - generic [ref=e320]:
+          - generic [ref=e321]:
+            - img [ref=e322]
+            - img [ref=e324]
+            - img [ref=e326]
+            - img [ref=e328]
+            - img [ref=e330]
+          - paragraph [ref=e332]: “Ordered prescription lenses with my frame — the clarity is extraordinary. You can tell every detail was considered.”
+          - generic [ref=e333]:
+            - paragraph [ref=e334]: Maya L.
+            - paragraph [ref=e335]: Photographer, Tokyo
+    - generic [ref=e338]:
+      - paragraph [ref=e339]: Stay Connected
+      - heading "Join the Spectra Community" [level=2] [ref=e340]
+      - paragraph [ref=e341]: Be the first to know about new collections, exclusive drops, and limited editions.
+      - generic [ref=e342]:
+        - textbox "Enter your email" [ref=e343]
+        - button "Subscribe" [ref=e344] [cursor=pointer]:
+          - text: Subscribe
+          - img [ref=e345]
+  - contentinfo [ref=e347]:
+    - generic [ref=e349]:
+      - generic [ref=e350]:
+        - link "SPECTRA" [ref=e351] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e352]: Redefining vision through precision craftsmanship and timeless design. Every frame tells a story.
+        - generic [ref=e353]:
+          - link [ref=e354] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e355]
+          - link [ref=e358] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e359]
+          - link [ref=e362] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e363]
+      - generic [ref=e366]:
+        - heading "Shop" [level=4] [ref=e367]
+        - list [ref=e368]:
+          - listitem [ref=e369]:
+            - link "Sunglasses" [ref=e370] [cursor=pointer]:
+              - /url: /collections/sunglasses
+          - listitem [ref=e371]:
+            - link "Eyeglasses" [ref=e372] [cursor=pointer]:
+              - /url: /collections/eyeglasses
+          - listitem [ref=e373]:
+            - link "New Arrivals" [ref=e374] [cursor=pointer]:
+              - /url: /collections/new-arrivals
+          - listitem [ref=e375]:
+            - link "Bestsellers" [ref=e376] [cursor=pointer]:
+              - /url: /collections/bestsellers
+          - listitem [ref=e377]:
+            - link "Limited Edition" [ref=e378] [cursor=pointer]:
+              - /url: /collections/limited-edition
+      - generic [ref=e379]:
+        - heading "Support" [level=4] [ref=e380]
+        - list [ref=e381]:
+          - listitem [ref=e382]:
+            - link "Size Guide" [ref=e383] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e384]:
+            - link "Shipping & Returns" [ref=e385] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e386]:
+            - link "Warranty" [ref=e387] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e388]:
+            - link "FAQ" [ref=e389] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e390]:
+            - link "Contact Us" [ref=e391] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e392]:
+        - heading "Company" [level=4] [ref=e393]
+        - list [ref=e394]:
+          - listitem [ref=e395]:
+            - link "About Us" [ref=e396] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e397]:
+            - link "Stores" [ref=e398] [cursor=pointer]:
+              - /url: /stores
+          - listitem [ref=e399]:
+            - link "Sustainability" [ref=e400] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e401]:
+            - link "Careers" [ref=e402] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e403]:
+            - link "Press" [ref=e404] [cursor=pointer]:
+              - /url: "#"
+    - generic [ref=e406]:
+      - paragraph [ref=e407]: © 2026 Spectra Eyewear. All rights reserved.
+      - generic [ref=e408]:
+        - link "Privacy Policy" [ref=e409] [cursor=pointer]:
+          - /url: "#"
+        - link "Terms of Service" [ref=e410] [cursor=pointer]:
+          - /url: "#"
+        - link "Cookies" [ref=e411] [cursor=pointer]:
+          - /url: "#"

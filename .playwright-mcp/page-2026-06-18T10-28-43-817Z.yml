@@ -1,0 +1,218 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 300,000+ WEAR SPECTRA
+      - generic [ref=e6]: BUY 2, GET 1 FREE
+      - generic [ref=e7]: FREE SHIPPING ON ORDERS $50+
+    - button "Dismiss announcement" [ref=e8]:
+      - img [ref=e9]
+  - banner [ref=e12]:
+    - navigation [ref=e13]:
+      - link "SPECTRA" [ref=e14] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e15]:
+        - link "Sunglasses" [ref=e17] [cursor=pointer]:
+          - /url: /collections/sunglasses
+          - text: Sunglasses
+          - img [ref=e18]
+        - link "Eyeglasses" [ref=e21] [cursor=pointer]:
+          - /url: /collections/eyeglasses
+          - text: Eyeglasses
+          - img [ref=e22]
+        - link "Collections" [ref=e25] [cursor=pointer]:
+          - /url: /collections/all
+          - text: Collections
+          - img [ref=e26]
+        - link "About" [ref=e29] [cursor=pointer]:
+          - /url: /about
+        - link "Stores" [ref=e31] [cursor=pointer]:
+          - /url: /stores
+      - generic [ref=e32]:
+        - button "Open search" [ref=e33]:
+          - img [ref=e34]
+        - link "Sign in" [ref=e37] [cursor=pointer]:
+          - /url: /auth/login
+          - img [ref=e38]
+        - link "Wishlist" [ref=e41] [cursor=pointer]:
+          - /url: /wishlist
+          - img [ref=e42]
+        - link "Shopping cart" [ref=e44] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=e45]
+  - main [ref=e48]:
+    - generic [ref=e50]:
+      - navigation "Breadcrumb" [ref=e51]:
+        - link "Home" [ref=e52] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e53]:
+          - img [ref=e54]
+          - link "Collections" [ref=e56] [cursor=pointer]:
+            - /url: /collections/all
+        - generic [ref=e57]:
+          - img [ref=e58]
+          - generic [ref=e60]: Signature
+      - generic [ref=e61]:
+        - paragraph [ref=e62]: 4 Styles
+        - heading "Signature" [level=1] [ref=e63]
+        - paragraph [ref=e64]: Our flagship collection — where timeless design meets modern precision. Each frame is a statement.
+      - generic [ref=e65]:
+        - button "All" [ref=e66]
+        - button "Aviator" [ref=e67]
+        - button "Wayfarer" [ref=e68]
+        - button "Round" [ref=e69]
+        - button "Cat Eye" [ref=e70]
+        - button "Square" [ref=e71]
+        - button "Rectangle" [ref=e72]
+        - generic [ref=e73]:
+          - button "Newest" [ref=e74]
+          - 'button "Price: Low to High" [ref=e75]'
+          - 'button "Price: High to Low" [ref=e76]'
+          - button "Best Sellers" [ref=e77]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - link "New Sale Spectra Aviator Gold Quick Add" [ref=e80] [cursor=pointer]:
+            - /url: /products/spectra-aviator-gold
+            - generic [ref=e81]:
+              - generic [ref=e82]: New
+              - generic [ref=e83]: Sale
+              - generic [ref=e85]:
+                - img [ref=e87]
+                - generic [ref=e93]: Spectra Aviator Gold
+              - button "Quick Add" [ref=e95]
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - link "Spectra Aviator Gold" [ref=e102] [cursor=pointer]:
+                - /url: /products/spectra-aviator-gold
+              - button [ref=e103]:
+                - img [ref=e104]
+            - generic [ref=e106]:
+              - generic [ref=e107]: $349.00
+              - generic [ref=e108]: $429.00
+        - generic [ref=e109]:
+          - link "Spectra Wayfarer Classic Quick Add" [ref=e110] [cursor=pointer]:
+            - /url: /products/spectra-wayfarer-classic
+            - generic [ref=e111]:
+              - generic [ref=e113]:
+                - img [ref=e115]
+                - generic [ref=e121]: Spectra Wayfarer Classic
+              - button "Quick Add" [ref=e123]
+          - generic [ref=e128]:
+            - generic [ref=e129]:
+              - link "Spectra Wayfarer Classic" [ref=e130] [cursor=pointer]:
+                - /url: /products/spectra-wayfarer-classic
+              - button [ref=e131]:
+                - img [ref=e132]
+            - generic [ref=e135]: $289.00
+        - generic [ref=e136]:
+          - link "Spectra Square Luxe Quick Add" [ref=e137] [cursor=pointer]:
+            - /url: /products/spectra-square-luxe
+            - generic [ref=e138]:
+              - generic [ref=e140]:
+                - img [ref=e142]
+                - generic [ref=e148]: Spectra Square Luxe
+              - button "Quick Add" [ref=e150]
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - link "Spectra Square Luxe" [ref=e157] [cursor=pointer]:
+                - /url: /products/spectra-square-luxe
+              - button [ref=e158]:
+                - img [ref=e159]
+            - generic [ref=e162]: $449.00
+        - generic [ref=e163]:
+          - link "Sale Spectra Rectangle Minimal Quick Add" [ref=e164] [cursor=pointer]:
+            - /url: /products/spectra-rectangle-minimal
+            - generic [ref=e165]:
+              - generic [ref=e166]: Sale
+              - generic [ref=e168]:
+                - img [ref=e170]
+                - generic [ref=e176]: Spectra Rectangle Minimal
+              - button "Quick Add" [ref=e178]
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - link "Spectra Rectangle Minimal" [ref=e184] [cursor=pointer]:
+                - /url: /products/spectra-rectangle-minimal
+              - button [ref=e185]:
+                - img [ref=e186]
+            - generic [ref=e188]:
+              - generic [ref=e189]: $529.00
+              - generic [ref=e190]: $599.00
+  - contentinfo [ref=e191]:
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - link "SPECTRA" [ref=e195] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e196]: Redefining vision through precision craftsmanship and timeless design. Every frame tells a story.
+        - generic [ref=e197]:
+          - link [ref=e198] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e199]
+          - link [ref=e202] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e203]
+          - link [ref=e206] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e207]
+      - generic [ref=e210]:
+        - heading "Shop" [level=4] [ref=e211]
+        - list [ref=e212]:
+          - listitem [ref=e213]:
+            - link "Sunglasses" [ref=e214] [cursor=pointer]:
+              - /url: /collections/sunglasses
+          - listitem [ref=e215]:
+            - link "Eyeglasses" [ref=e216] [cursor=pointer]:
+              - /url: /collections/eyeglasses
+          - listitem [ref=e217]:
+            - link "New Arrivals" [ref=e218] [cursor=pointer]:
+              - /url: /collections/new-arrivals
+          - listitem [ref=e219]:
+            - link "Bestsellers" [ref=e220] [cursor=pointer]:
+              - /url: /collections/bestsellers
+          - listitem [ref=e221]:
+            - link "Limited Edition" [ref=e222] [cursor=pointer]:
+              - /url: /collections/limited-edition
+      - generic [ref=e223]:
+        - heading "Support" [level=4] [ref=e224]
+        - list [ref=e225]:
+          - listitem [ref=e226]:
+            - link "Size Guide" [ref=e227] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e228]:
+            - link "Shipping & Returns" [ref=e229] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e230]:
+            - link "Warranty" [ref=e231] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e232]:
+            - link "FAQ" [ref=e233] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e234]:
+            - link "Contact Us" [ref=e235] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e236]:
+        - heading "Company" [level=4] [ref=e237]
+        - list [ref=e238]:
+          - listitem [ref=e239]:
+            - link "About Us" [ref=e240] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e241]:
+            - link "Stores" [ref=e242] [cursor=pointer]:
+              - /url: /stores
+          - listitem [ref=e243]:
+            - link "Sustainability" [ref=e244] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e245]:
+            - link "Careers" [ref=e246] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e247]:
+            - link "Press" [ref=e248] [cursor=pointer]:
+              - /url: "#"
+    - generic [ref=e250]:
+      - paragraph [ref=e251]: © 2026 Spectra Eyewear. All rights reserved.
+      - generic [ref=e252]:
+        - link "Privacy Policy" [ref=e253] [cursor=pointer]:
+          - /url: "#"
+        - link "Terms of Service" [ref=e254] [cursor=pointer]:
+          - /url: "#"
+        - link "Cookies" [ref=e255] [cursor=pointer]:
+          - /url: "#"
+  - alert [ref=e256]

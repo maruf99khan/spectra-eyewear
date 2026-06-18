@@ -2,9 +2,11 @@
 
 @theme inline {
   --color-bg-primary: #FAFAFA;
+  --color-bg-secondary: #F0F0F0;
   --color-bg-white: #FFFFFF;
   --color-surface: #FFFFFF;
   --color-surface-light: #F5F5F5;
+  --color-surface-hover: #F0F0F0;
   --color-border: #E5E5E5;
   --color-border-hover: #D4D4D4;
   --color-accent: #000000;
@@ -20,6 +22,31 @@
   --space-md: 24px;
   --space-lg: 48px;
   --space-xl: 80px;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0,0,0,0.05); }
+  50% { box-shadow: 0 0 0 8px rgba(0,0,0,0.02); }
 }
 
 @layer base {
@@ -88,10 +115,27 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     border-radius: 0;
-    transition: all 0.2s ease;
+    transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
     cursor: pointer;
     border: 1px solid transparent;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.08);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 
   .btn-primary {
@@ -111,8 +155,11 @@
     border-color: var(--color-accent);
   }
 
-  .btn-secondary:hover {
+  .btn-secondary::before {
     background: var(--color-accent);
+  }
+
+  .btn-secondary:hover {
     color: var(--color-bg-white);
   }
 
@@ -139,7 +186,7 @@
     width: 0;
     height: 1px;
     background: currentColor;
-    transition: width 0.3s ease;
+    transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .link-underline:hover::after {
@@ -166,12 +213,14 @@
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .glass-card:hover {
     background: rgba(255, 255, 255, 0.75);
     border-color: rgba(229, 229, 229, 0.6);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
   }
 
   .glass-nav {
@@ -192,6 +241,73 @@
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+  }
+
+  .card-shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .card-shadow:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
+    transform: translateY(-3px);
+  }
+
+  .image-zoom {
+    overflow: hidden;
+  }
+
+  .image-zoom img {
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .image-zoom:hover img {
+    transform: scale(1.04);
+  }
+
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-border), transparent);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .section-label::before,
+  .section-label::after {
+    content: "";
+    width: 24px;
+    height: 1px;
+    background: var(--color-border);
+  }
+
+  .hover-lift {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #FAFAFA 0%, #F0F0F0 50%, #E8E8E8 100%);
+  }
+
+  .hero-gradient-dark {
+    background: linear-gradient(135deg, #111111 0%, #1A1A1A 50%, #222222 100%);
   }
 }
 

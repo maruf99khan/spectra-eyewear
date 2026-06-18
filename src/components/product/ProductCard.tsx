@@ -23,7 +23,9 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
   return (
     <div className="group">
       <Link href={`/products/${product.slug}`} className="block">
-        <div className="relative aspect-[4/5] bg-surface-light border border-border/50 overflow-hidden mb-3 glass-card">
+        <div className="relative aspect-[4/5] bg-surface-light border border-border/50 overflow-hidden mb-3 card-shadow">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-[1]" />
+
           {product.isNew && (
             <span className="absolute top-3 left-3 z-10 px-2.5 py-1 bg-accent text-white text-[10px] font-semibold uppercase tracking-wider">
               New
@@ -37,15 +39,15 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           )}
 
           {product.originalPrice && (
-            <span className="absolute top-3 right-3 z-10 px-2.5 py-1 bg-text-primary text-white text-[10px] font-semibold uppercase tracking-wider">
+            <span className="absolute top-3 right-3 z-10 px-2.5 py-1 bg-accent text-white text-[10px] font-semibold uppercase tracking-wider">
               Sale
             </span>
           )}
 
-          <div className="w-full h-full flex items-center justify-center text-text-muted">
+          <div className="w-full h-full flex items-center justify-center text-text-muted group-hover:scale-[1.02] transition-transform duration-700">
             <div className="flex flex-col items-center gap-2">
-              <div className="w-14 h-14 rounded-full border border-border/60 flex items-center justify-center bg-white/30 backdrop-blur-sm">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <div className="w-14 h-14 rounded-full border border-border/60 flex items-center justify-center bg-white/30 backdrop-blur-sm group-hover:bg-white/50 group-hover:border-border transition-all duration-300">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform duration-300">
                   <circle cx="6" cy="15" r="4"/>
                   <circle cx="18" cy="15" r="4"/>
                   <path d="M14 15a2 2 0 0 0-4 0"/>
@@ -53,11 +55,11 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
                   <path d="M21.5 13 19 7c-.7-1.3-1.4-2-3-2"/>
                 </svg>
               </div>
-              <span className="text-xs text-text-muted/60">{product.name}</span>
+              <span className="text-xs text-text-muted/60 group-hover:text-text-muted/80 transition-colors duration-300">{product.name}</span>
             </div>
           </div>
 
-          <div className="absolute inset-x-0 bottom-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <div className="absolute inset-x-0 bottom-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
             <button
               onClick={(e) => {
                 e.preventDefault()
@@ -65,18 +67,19 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
                 addToast(`${product.name} added to cart`)
               }}
               disabled={product.isSoldOut}
-              className="w-full py-2.5 bg-accent/90 backdrop-blur-sm text-white text-xs font-medium uppercase tracking-wider hover:bg-accent transition-colors disabled:opacity-50"
+              className="w-full py-2.5 bg-accent/90 backdrop-blur-sm text-white text-xs font-medium uppercase tracking-wider hover:bg-accent transition-all duration-200 disabled:opacity-50 relative overflow-hidden"
             >
-              Quick Add
+              <span className="relative z-10">Quick Add</span>
+              <span className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             </button>
           </div>
 
           {product.colors.length > 0 && (
-            <div className="absolute bottom-3 left-3 flex gap-1.5">
+            <div className="absolute bottom-3 left-3 flex gap-1.5 transition-all duration-300 group-hover:translate-y-[-52px]">
               {product.colors.slice(0, 4).map((color) => (
                 <span
                   key={color.hex}
-                  className="w-3.5 h-3.5 rounded-full border border-white/50 ring-1 ring-border"
+                  className="w-3.5 h-3.5 rounded-full border border-white/50 ring-1 ring-border/50 transition-transform duration-200 hover:scale-125"
                   style={{ backgroundColor: color.hex }}
                 />
               ))}
@@ -90,7 +93,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
         </div>
       </Link>
 
-      <div className="space-y-1 px-0.5">
+      <div className="space-y-1.5 px-0.5">
         <div className="flex items-start justify-between gap-2">
           <Link
             href={`/products/${product.slug}`}
@@ -105,8 +108,8 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               toggleItem(product)
               addToast(wasInWishlist ? "Removed from wishlist" : "Added to wishlist", "info")
             }}
-            className={`shrink-0 p-1 transition-colors ${
-              inWishlist ? "text-accent" : "text-text-muted hover:text-accent"
+            className={`shrink-0 p-1 transition-all duration-200 ${
+              inWishlist ? "text-accent scale-110" : "text-text-muted hover:text-accent hover:scale-110"
             }`}
           >
             <Heart size={14} />

@@ -1,0 +1,13 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#F5F5F5"/>
+  <path d="M 235 385 L 365 385 C 380 420 365 460 335 478 C 315 488 285 488 265 478 C 235 460 220 420 235 385 Z" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 565 385 L 435 385 C 420 420 435 460 465 478 C 485 488 515 488 535 478 C 565 460 580 420 565 385 Z" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 280 395 Q 300 388 320 395" stroke="#111" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 480 395 Q 500 388 520 395" stroke="#111" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 250 382 Q 200 370 135 390" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 550 382 Q 600 370 665 390" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 365 396 L 435 396" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 380 396 L 380 360" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 400 348 L 400 344" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 395 352 L 400 344 L 405 352" stroke="#111" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

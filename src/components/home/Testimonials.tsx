@@ -29,15 +29,15 @@ export function Testimonials() {
       <div className="container-main">
         <div className="text-center mb-16">
           <p className="section-label justify-center mb-4">Testimonials</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight text-text-primary text-balance">Loved by Thousands</h2>
+          <h2 className="font-heading font-bold tracking-tight text-text-primary text-[clamp(1.75rem,3vw+0.5rem,3rem)]">Loved by Thousands</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
-            <div key={i} className="glass-card p-6 md:p-8 hover-lift">
+            <div key={i} className="bg-white border border-border/50 p-6 md:p-8 elevation-hover radius-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, j) => (
-                  <svg key={j} width="14" height="14" viewBox="0 0 24 24" fill="#111" stroke="none">
+                  <svg key={j} width="14" height="14" viewBox="0 0 24 24" fill="#1C1A17" stroke="none">
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                   </svg>
                 ))}

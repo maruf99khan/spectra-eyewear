@@ -187,14 +187,13 @@ export default function SearchPage() {
                   {filtered.map((product) => (
                     <div key={product.id} className="group">
                       <Link href={`/products/${product.slug}`} className="block">
-                        <div className="aspect-[4/5] bg-surface-light border border-border/50 mb-3 flex items-center justify-center text-text-muted/30 overflow-hidden card-shadow">
-                          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="group-hover:scale-110 transition-transform duration-500">
-                            <circle cx="6" cy="15" r="4"/>
-                            <circle cx="18" cy="15" r="4"/>
-                            <path d="M14 15a2 2 0 0 0-4 0"/>
-                            <path d="M2.5 13 5 7c.7-1.3 1.4-2 3-2"/>
-                            <path d="M21.5 13 19 7c-.7-1.3-1.4-2-3-2"/>
-                          </svg>
+                        <div className="aspect-[4/5] bg-surface-light border border-border/50 mb-3 overflow-hidden card-shadow">
+                          <img
+                            src={product.images[0] ?? "/placeholder.svg"}
+                            alt={product.name}
+                            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                            loading="lazy"
+                          />
                         </div>
                         <h3 className="text-sm font-medium text-text-primary group-hover:text-text-secondary transition-colors">{product.name}</h3>
                         <p className="text-xs text-text-muted mt-0.5">{product.category}</p>

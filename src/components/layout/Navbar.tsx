@@ -18,7 +18,7 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20)
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -30,10 +30,10 @@ export function Navbar() {
   return (
     <header
       className={`sticky top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "glass-nav-solid shadow-sm" : "glass-nav"
+        isScrolled ? "glass-nav-solid elevation-sm" : "glass-nav"
       }`}
     >
-      <div className={`absolute inset-x-0 top-0 h-[1px] transition-opacity duration-500 bg-gradient-to-r from-transparent via-black/10 to-transparent ${isScrolled ? "opacity-100" : "opacity-0"}`} />
+      <div className={`absolute inset-x-0 top-0 h-px transition-opacity duration-500 bg-gradient-to-r from-transparent via-black/10 to-transparent ${isScrolled ? "opacity-100" : "opacity-0"}`} />
       <nav className="container-main flex items-center justify-between h-16 md:h-18">
         <Link href="/" className="text-2xl font-heading font-bold tracking-tight text-text-primary hover:opacity-70 transition-opacity" onClick={closeMenu}>
           SPECTRA
@@ -43,6 +43,7 @@ export function Navbar() {
           {NAV_ITEMS.map((item) => {
             const subcategories = COLLECTION_SUBCATEGORIES[item.label]
             const hasSubmenu = !!subcategories
+            const isActive = pathname === item.href || pathname.startsWith(item.href + "/")
 
             return (
               <div
@@ -57,8 +58,8 @@ export function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className={`flex items-center gap-1 px-4 py-2 text-sm tracking-wide transition-all duration-200 rounded-sm relative
-                    ${pathname === item.href ? "text-text-primary" : "text-text-secondary hover:text-text-primary"}
+                  className={`group relative flex items-center gap-1 px-4 py-2 text-sm tracking-wide transition-all duration-200 radius-sm
+                    ${isActive ? "text-text-primary" : "text-text-secondary hover:text-text-primary"}
                   `}
                 >
                   {item.label}
@@ -68,16 +69,17 @@ export function Navbar() {
                       className={`transition-transform duration-300 ${openMegaMenu === item.label ? "rotate-180" : ""}`}
                     />
                   )}
+                  <span className={`absolute bottom-0 left-4 right-4 h-0.5 bg-accent transition-transform duration-300 origin-left ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`} />
                 </Link>
 
                 {hasSubmenu && openMegaMenu === item.label && (
-                  <div className="absolute top-full left-0 mt-1 w-56 glass-strong shadow-sm animate-fadeIn">
+                  <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-border elevation-md radius-md animate-fadeIn">
                     <div className="p-2">
                       {subcategories.map((sub) => (
                         <Link
                           key={sub.label}
                           href={sub.href}
-                          className="block px-4 py-2.5 text-sm text-text-secondary hover:text-text-primary hover:bg-white/50 transition-all duration-200 rounded-sm"
+                          className="block px-4 py-2.5 text-sm text-text-secondary hover:text-text-primary hover:bg-surface-light transition-all duration-200 radius-sm"
                         >
                           {sub.label}
                         </Link>
@@ -94,7 +96,7 @@ export function Navbar() {
           <button
             onClick={toggleSearch}
             aria-label="Open search"
-            className="p-2.5 text-text-secondary hover:text-text-primary transition-all duration-200 hover:bg-black/[0.03] rounded-sm"
+            className="p-2.5 text-text-secondary hover:text-text-primary transition-all duration-200 hover:bg-black/[0.03] radius-sm"
           >
             <Search size={18} />
           </button>
@@ -102,14 +104,14 @@ export function Navbar() {
           <Link
             href="/wishlist"
             aria-label="Wishlist"
-            className="hidden sm:block p-2.5 text-text-secondary hover:text-text-primary transition-all duration-200 hover:bg-black/[0.03] rounded-sm"
+            className="hidden sm:block p-2.5 text-text-secondary hover:text-text-primary transition-all duration-200 hover:bg-black/[0.03] radius-sm"
           >
             <Heart size={18} />
           </Link>
           <Link
             href="/cart"
             aria-label="Shopping cart"
-            className="relative p-2.5 text-text-secondary hover:text-text-primary transition-all duration-200 hover:bg-black/[0.03] rounded-sm"
+            className="relative p-2.5 text-text-secondary hover:text-text-primary transition-all duration-200 hover:bg-black/[0.03] radius-sm"
           >
             <ShoppingBag size={18} />
             {getTotalItems() > 0 && (
@@ -119,7 +121,7 @@ export function Navbar() {
             )}
           </Link>
           <button
-            className="lg:hidden p-2.5 text-text-secondary hover:text-text-primary transition-all duration-200 hover:bg-black/[0.03] rounded-sm"
+            className="lg:hidden p-2.5 text-text-secondary hover:text-text-primary transition-all duration-200 hover:bg-black/[0.03] radius-sm"
             onClick={toggleMenu}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
@@ -129,8 +131,8 @@ export function Navbar() {
       </nav>
 
       <div
-        className={`lg:hidden glass-strong overflow-hidden transition-all duration-300 ${
-          isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        className={`lg:hidden border-t border-border/50 bg-white overflow-hidden transition-all duration-300 ${
+          isMenuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="container-main py-4 space-y-1">

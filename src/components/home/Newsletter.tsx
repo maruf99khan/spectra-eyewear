@@ -32,18 +32,17 @@ export function Newsletter() {
   }
 
   return (
-    <section className="py-24 md:py-32 bg-surface relative">
+    <section className="py-24 md:py-32 bg-bg-primary relative">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.015)_0%,transparent_60%)]" />
       <div className="container-main relative z-10">
-        <div className="glass-strong p-10 md:p-16 text-center max-w-3xl mx-auto border border-border/30 shadow-sm relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-black/5 to-transparent" />
+        <div className="bg-white border border-border/50 p-10 md:p-16 text-center max-w-3xl mx-auto elevation-sm relative overflow-hidden">
           <p className="section-label justify-center mb-4">Stay Connected</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-tight text-text-primary mb-4 text-balance">Join the Spectra Community</h2>
+          <h2 className="font-heading font-bold tracking-tight text-text-primary text-[clamp(1.5rem,2.5vw+0.5rem,2.5rem)] mb-4">Join the Spectra Community</h2>
           <p className="text-sm text-text-muted max-w-md mx-auto mb-8 leading-relaxed">
             Be the first to know about new collections, exclusive drops, and limited editions.
           </p>
           {subscribed ? (
-            <div className="flex items-center justify-center gap-2 text-text-primary animate-fadeIn">
+            <div className="flex items-center justify-center gap-2 text-text-primary">
               <Check size={20} />
               <span className="text-sm font-medium">You&apos;re subscribed!</span>
             </div>

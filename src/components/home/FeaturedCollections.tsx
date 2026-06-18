@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { collections } from "@/data/collections"
 import { ArrowRight } from "lucide-react"
 
@@ -11,10 +10,10 @@ export function FeaturedCollections() {
   return (
     <section className="py-24 md:py-32 bg-bg-primary">
       <div className="container-main">
-        <div className="flex items-end justify-between mb-12">
+        <div className="flex items-end justify-between mb-14">
           <div>
             <p className="section-label mb-4">Curated</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight text-text-primary text-balance">Featured Collections</h2>
+            <h2 className="font-heading font-bold tracking-tight text-text-primary text-[clamp(1.75rem,3vw+0.5rem,3rem)]">Featured Collections</h2>
           </div>
           <Link
             href="/collections/all"
@@ -25,12 +24,12 @@ export function FeaturedCollections() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-          {featured.map((collection, i) => (
+          {featured.map((collection) => (
             <div key={collection.id} className="group">
               <Link href={`/collections/${collection.slug}`} className="block">
-                <div className="relative aspect-[4/5] bg-surface-light overflow-hidden border border-border/50 card-shadow">
-                  <div className="absolute inset-0 flex items-center justify-center text-text-muted group-hover:scale-105 transition-transform duration-700">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform duration-500">
+                <div className="relative aspect-[4/5] bg-surface-light overflow-hidden border border-border/50 elevation-hover radius-sm">
+                  <div className="absolute inset-0 flex items-center justify-center text-text-muted/20 group-hover:scale-105 transition-transform duration-700">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="6" cy="15" r="4"/>
                       <circle cx="18" cy="15" r="4"/>
                       <path d="M14 15a2 2 0 0 0-4 0"/>
@@ -52,10 +51,10 @@ export function FeaturedCollections() {
           ))}
         </div>
 
-        <div className="mt-8 text-center sm:hidden">
+        <div className="mt-10 text-center sm:hidden">
           <Link
             href="/collections/all"
-            className="inline-flex items-center gap-1.5 text-sm text-text-secondary hover:text-text-primary transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-text-primary hover:text-text-secondary transition-colors"
           >
             View All Collections <ArrowRight size={14} />
           </Link>

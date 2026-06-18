@@ -27,7 +27,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="border-t border-border/50 glass-section">
+    <footer className="border-t border-border/50 bg-surface">
       <div className="container-main py-16 md:py-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
           <div className="col-span-2 md:col-span-1">
@@ -43,6 +43,7 @@ export function Footer() {
                   key={i}
                   href="#"
                   className="w-9 h-9 border border-border flex items-center justify-center text-text-muted hover:text-text-primary hover:border-text-primary transition-all duration-200 hover:-translate-y-0.5"
+                  aria-label={`Social link ${i + 1}`}
                 >
                   <Icon size={16} />
                 </a>
